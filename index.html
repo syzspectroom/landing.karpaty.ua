@@ -1,378 +1,387 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta content='width=device-width' name='viewport'>
-    <title>Здати своє житло - KARPATY.UA</title>
-    <link href='images/favico.png' rel='shortcut icon' type='image/x-icon'>
-    <style>
-      article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a:focus{outline:dotted thin}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:"\201C""\201D""\2018""\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body,html{height:100%}body{font-family:"Open Sans",sans-serif;font-size:18px;letter-spacing:normal;line-height:1.5em;font-weight:400;color:#181818;min-width:320px}h1,h2,h3,h4,h5,h6{margin:0;color:#181818;text-transform:uppercase;font-weight:800}h1{font-size:2.77778em;line-height:1.2em}a{color:#ff2a2a;outline:0!important}a:hover{text-decoration:none}ol,ul{margin:0;padding:0}ol li,ul li{list-style:none;line-height:1.5em}.stn-btn{height:40px;padding:0 25px;font-family:"Open Sans",sans-serif;font-weight:700;font-size:.77778em;line-height:40px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;border:none;color:#fff;text-decoration:none;outline:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;background:#ff2a2a;border-bottom:3px solid #ae0c0c;text-transform:uppercase}.stn-btn:hover{border-bottom-width:1px;margin-top:2px}.stn-btn:active{border-bottom:none;margin-top:3px}.section-container{display:table;width:100%;height:100%}.section-container-inside{display:table-cell;vertical-align:middle}p{margin:0}.wrap{position:relative}#logo{display:block;width:89px;height:79px;position:absolute;left:30px;top:30px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABPBAMAAAByqnQaAAAAMFBMVEVM0/8llbn///80pss7t+CEw9i63ekrm79XrclGyfTy+ftuudHj8fan1OOTy93O5+8PmttVAAADFElEQVRIx+3WQUiTUQAH8BcJslsPay60JX9xjW/fnENLJALFgXRU+UCssCZ9DKTyIy8JRZ/gDl5aJEhHB3aUXFQXL+0QgXXQg0HWQaEEu+Sg6BS9fe/N981v6/t26+AfxPHej+2999/eRpCiHhNItpA26jlNLeQG9Z7rxKxBPyRGDXqS0BpyonY9e6VJM6mmxQOaNtLA/uistvKS/deGm9iDkVmtOFDSO+oMzACw7gfwHcB2Eq0FIFKITmOlEB1SaB6LUidD9Ayyb/y4iTX8wTlk2z9DeZdTciot6gCykQMNtNJmZSfsxzAmsJuNYC9G8+30LPJhSwcxFLXpfToTzUX9gHIR7/ELacSZDrAJSzcr04pNh+lGaENlGlvAszmMYZBpWoBp6Rn1KsyDdRfYCwNI4wvW2H5yAPaLegOrH5JqXt0BsG47kxG0jeIbthBhOhm7hlauc7Ec0J4PjWFR6Fe3gvqWvh3Uv+ov9JS+TjdTDXpqc4LN6OnbgTtvX+vjAX28ti7/R93Y2d9pVBQNXYlEQswJ3ZUhLPMDTjxlzRDfgNQ9RGQ+fhiTUvpKuoEcxNctZflMXUmfJrYM2HGGyMSFniRVeK99/LHQHaQsfO1iOzL1QveWa58hd2jLcYcW42LRrlqeVqPA7npBDrrrfr5zNy377CEetI+/fxovE0+6n7LczRAXLZ898dRu3Hd5pI90Jd3hSdfXpI8JPelJ9wl90gv2GUVt8MvANU+sRZj8VnJLncHcc/676p6HdbD8IGF+QbrguPjNppjW986/uYXpXAtB1LC4o1DHlX4fTGOJcu6CT2UtjTV5A1c7O7boPLjGbwd33OaBAkoa45RW67SOP1MSUiu74rvDifkZ7EFozgflsTtboaMo01BNziu1Qh/hkEaM897D71KWNBwa0Tg/dsdBX0IFjWXekjzHBWsgmK2kZUuOVpza1pJoxbBa4dihZUtT/KBFK9W18pHzTKmVT6iqZUuUWdlKVQ11hcqswkWLlkSFrhqhuMAX4EFjmS/6QdaTxpL4YHnT+NlNzxdQQf8FjeRWZ/wyFuIAAAAASUVORK5CYII=) no-repeat;z-index:100}#myMenu{position:fixed;right:2%;top:30px;z-index:100}#myMenu li{float:left;background:rgba(0,0,0,.4);margin-right:1px}#myMenu li a{display:block;padding:0 15px;height:23px;line-height:23px;font-size:.77778em;color:#fff;text-decoration:none}#myMenu li:hover{cursor:pointer}#myMenu li.active{background:rgba(0,0,0,.7)}.hotline{position:fixed;bottom:94px;right:45px;line-height:1.445em;background:rgba(255,255,255,.5);padding:0 15px;z-index:100}.nav-link{position:absolute;bottom:-40px;left:50%;margin-left:-40px;padding-top:21px;display:block;width:80px;height:80px;background:#fff;text-align:center;font-size:.77778em;font-weight:700;text-transform:uppercase;text-decoration:none;-webkit-border-radius:100%;-moz-border-radius:100%;-ms-border-radius:100%;-o-border-radius:100%;border-radius:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;z-index:100}.nav-link:before{content:'';position:absolute;left:50%;bottom:20px;margin-left:-14px;display:block;width:27px;height:14px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAOCAMAAADpEZdPAAAARVBMVEUAAAD/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSmb2JKzAAAAFnRSTlMA/J/wA/bp1rCOcGI3KhYQyce+clNCAAwM/QAAAFdJREFUGNO1zkkOgCAQRNFinsGR+x9Vo9FAAHe+XecnlQbNIxp57Jcmhol9/GnBV9YtascpUtLuWY6bn+pCaMSLO1mk2aOSzDMsHRphueZMQs+mhA7FfQAOtBeDsOkhrgAAAABJRU5ErkJggg==) no-repeat}#section1{min-height:450px}#section1 .section-container-inside{text-align:center}#section1 .section-content{display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1}#section1 .image-block,#section1 .text-block{display:-moz-inline-stack;display:inline-block;zoom:1;vertical-align:top}#section1 .text-block p{font-size:.88889em}#section1 .image-block{width:502px;height:454px}#section1 .image-block img{width:502px}#section1 .text-block{width:30%;margin-left:10%;text-align:left}#section1 .text-block p{margin:35px 0 70px}#section2{background:url(images/slide2.jpg) center/cover no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;padding-top:109px}.section{position:relative}
-    </style>
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Здати своє житло - KARPATY.UA</title>
+  <link href='images/favico.png' rel='shortcut icon' type='image/x-icon'>
+  <style>
+  article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a:focus{outline:dotted thin}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:"\201C""\201D""\2018""\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}body,html{height:100%}body{font-family:"Open Sans",sans-serif;font-size:18px;letter-spacing:normal;line-height:1.5em;font-weight:400;color:#181818;min-width:320px}h1,h2,h3,h4,h5,h6{margin:0;color:#181818;text-transform:uppercase;font-weight:800}h1{font-size:2.77778em;line-height:1.2em}a{color:#ff2a2a;outline:0!important}a:hover{text-decoration:none}ol,ul{margin:0;padding:0}ol li,ul li{list-style:none;line-height:1.5em}.stn-btn{height:40px;padding:0 25px;font-family:"Open Sans",sans-serif;font-weight:700;font-size:.77778em;line-height:40px;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;border-radius:4px;border:none;color:#fff;text-decoration:none;outline:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;background:#ff2a2a;border-bottom:3px solid #ae0c0c;text-transform:uppercase}.stn-btn:hover{border-bottom-width:1px;margin-top:2px}.stn-btn:active{border-bottom:none;margin-top:3px}.section-container{display:table;width:100%;height:100%}.section-container-inside{display:table-cell;vertical-align:middle}p{margin:0}.wrap{position:relative}#logo{display:block;width:89px;height:79px;position:absolute;left:30px;top:30px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABPBAMAAAByqnQaAAAAMFBMVEVM0/8llbn///80pss7t+CEw9i63ekrm79XrclGyfTy+ftuudHj8fan1OOTy93O5+8PmttVAAADFElEQVRIx+3WQUiTUQAH8BcJslsPay60JX9xjW/fnENLJALFgXRU+UCssCZ9DKTyIy8JRZ/gDl5aJEhHB3aUXFQXL+0QgXXQg0HWQaEEu+Sg6BS9fe/N981v6/t26+AfxPHej+2999/eRpCiHhNItpA26jlNLeQG9Z7rxKxBPyRGDXqS0BpyonY9e6VJM6mmxQOaNtLA/uistvKS/deGm9iDkVmtOFDSO+oMzACw7gfwHcB2Eq0FIFKITmOlEB1SaB6LUidD9Ayyb/y4iTX8wTlk2z9DeZdTciot6gCykQMNtNJmZSfsxzAmsJuNYC9G8+30LPJhSwcxFLXpfToTzUX9gHIR7/ELacSZDrAJSzcr04pNh+lGaENlGlvAszmMYZBpWoBp6Rn1KsyDdRfYCwNI4wvW2H5yAPaLegOrH5JqXt0BsG47kxG0jeIbthBhOhm7hlauc7Ec0J4PjWFR6Fe3gvqWvh3Uv+ov9JS+TjdTDXpqc4LN6OnbgTtvX+vjAX28ti7/R93Y2d9pVBQNXYlEQswJ3ZUhLPMDTjxlzRDfgNQ9RGQ+fhiTUvpKuoEcxNctZflMXUmfJrYM2HGGyMSFniRVeK99/LHQHaQsfO1iOzL1QveWa58hd2jLcYcW42LRrlqeVqPA7npBDrrrfr5zNy377CEetI+/fxovE0+6n7LczRAXLZ898dRu3Hd5pI90Jd3hSdfXpI8JPelJ9wl90gv2GUVt8MvANU+sRZj8VnJLncHcc/676p6HdbD8IGF+QbrguPjNppjW986/uYXpXAtB1LC4o1DHlX4fTGOJcu6CT2UtjTV5A1c7O7boPLjGbwd33OaBAkoa45RW67SOP1MSUiu74rvDifkZ7EFozgflsTtboaMo01BNziu1Qh/hkEaM897D71KWNBwa0Tg/dsdBX0IFjWXekjzHBWsgmK2kZUuOVpza1pJoxbBa4dihZUtT/KBFK9W18pHzTKmVT6iqZUuUWdlKVQ11hcqswkWLlkSFrhqhuMAX4EFjmS/6QdaTxpL4YHnT+NlNzxdQQf8FjeRWZ/wyFuIAAAAASUVORK5CYII=) no-repeat;z-index:100}#myMenu{position:fixed;right:2%;top:30px;z-index:100}#myMenu li{float:left;background:rgba(0,0,0,.4);margin-right:1px}#myMenu li a{display:block;padding:0 15px;height:23px;line-height:23px;font-size:.77778em;color:#fff;text-decoration:none}#myMenu li:hover{cursor:pointer}#myMenu li.active{background:rgba(0,0,0,.7)}.hotline{position:fixed;bottom:94px;right:45px;line-height:1.445em;background:rgba(255,255,255,.5);padding:0 15px;z-index:100}.nav-link{position:absolute;bottom:-40px;left:50%;margin-left:-40px;padding-top:21px;display:block;width:80px;height:80px;background:#fff;text-align:center;font-size:.77778em;font-weight:700;text-transform:uppercase;text-decoration:none;-webkit-border-radius:100%;-moz-border-radius:100%;-ms-border-radius:100%;-o-border-radius:100%;border-radius:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;z-index:100}.nav-link:before{content:'';position:absolute;left:50%;bottom:20px;margin-left:-14px;display:block;width:27px;height:14px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAOCAMAAADpEZdPAAAARVBMVEUAAAD/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSn/KSmb2JKzAAAAFnRSTlMA/J/wA/bp1rCOcGI3KhYQyce+clNCAAwM/QAAAFdJREFUGNO1zkkOgCAQRNFinsGR+x9Vo9FAAHe+XecnlQbNIxp57Jcmhol9/GnBV9YtascpUtLuWY6bn+pCaMSLO1mk2aOSzDMsHRphueZMQs+mhA7FfQAOtBeDsOkhrgAAAABJRU5ErkJggg==) no-repeat}#section1{min-height:450px}#section1 .section-container-inside{text-align:center}#section1 .section-content{display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1}#section1 .image-block,#section1 .text-block{display:-moz-inline-stack;display:inline-block;zoom:1;vertical-align:top}#section1 .text-block p{font-size:.88889em}#section1 .image-block{width:502px;height:454px}#section1 .image-block img{width:502px}#section1 .text-block{width:30%;margin-left:10%;text-align:left}#section1 .text-block p{margin:35px 0 70px}#section2{background:url(images/slide2.jpg) center/cover no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;padding-top:109px}.section{position:relative}
+  </style>
   </head>
   <body>
-    <div class='wrap'>
-      <div id='logo'></div>
-      <nav id='myMenu' role='navigation'>
-        <ul class='nav clearfix'>
-          <li class='active'>
-            <a href='#section1'>Головне</a>
-          </li>
-          <li>
-            <a href='#section2'>Статистика</a>
-          </li>
-          <li>
-            <a href='#section3'>Переваги</a>
-          </li>
-          <li>
-            <a href='#section4'>Ціни</a>
-          </li>
-          <li>
-            <a href='#section5'>Відгуки</a>
-          </li>
+  <div class='wrap'>
+  <div id='logo'></div>
+  <nav id='myMenu' role='navigation'>
+  <ul class='nav clearfix'>
+  <li class='active'>
+  <a href='#section1'>Головне</a>
+  </li>
+  <li>
+  <a href='#section2'>Статистика</a>
+  </li>
+  <li>
+  <a href='#section3'>Переваги</a>
+  </li>
+  <li>
+  <a href='#section4'>Ціни</a>
+  </li>
+  <li>
+  <a href='#section5'>Відгуки</a>
+  </li>
+  </ul>
+  </nav>
+  <p class='hotline'>
+  <b>Телефон:</b>
+  +38 068 635-75-69
+  </p>
+  <div class='section' id='section1' style='height: 611px;'>
+  <div class='section-container'>
+  <div class='section-container-inside'>
+  <div class='section-content'>
+  <div class='image-block'>
+  <img alt='#' src='images/slide1.png'>
+  </div>
+  <div class='text-block'>
+  <h1>Запроси до себе</h1>
+  <p>Зробіть так, щоб про вас дізнались! Karpaty.ua вам в цьому допоможе: сучасний сервіс пошуку та бронювання житла в Карпатах пропонує розмістити ваш гостиний дім, садибу чи котедж на сторінках свого каталогу. Отримайте більше гостей при мінімальних витратах часу та коштів!</p>
+  <a class='stn-btn open-form' href='#reg-form'>Нехай про вас дізнаються</a>
+  </div>
+  </div>
+</div>
+</div>
+<a class='nav-link' data-slide='2' href='#'>більше</a>
+</div>
+<div class='section' data-slide='2' id='section2'>
+  <div class='container'>
+    <h2>
+      Статистика
+      <span>те, чого ми досягли</span>
+    </h2>
+    <ul class='statistics-list'>
+      <li class='row clearfix'>
+        <div class='item'>
+          <h6>Обслуговування</h6>
+        </div>
+        <div class='item'>
+          <p class='type-1'>
+            <b>4</b>
+            роки
+            <span>в мережі</span>
+          </p>
+        </div>
+        <div class='item'>
+          <p class='type-2'>
+            понад
+            <b>300</b>
+            закладів
+            <span>в каталозі</span>
+          </p>
+        </div>
+      </li>
+      <li class='row clearfix'>
+        <div class='item'>
+          <h6>
+            Відвідуваність
+            <span>за 2014 рік</span>
+          </h6>
+        </div>
+        <div class='item'>
+          <p class='type-3'>
+            <b>191 582</b>
+            <span>користувачів</span>
+          </p>
+        </div>
+        <div class='item'>
+          <p class='type-4'>
+            <b>1 269 186</b>
+            <span>переглядів сторінок</span>
+          </p>
+        </div>
+      </li>
+      <li class='row clearfix'>
+        <div class='item'>
+          <h6>
+            Наші групи
+            у соцмережах
+          </h6>
+        </div>
+        <div class='item'>
+          <p class='type-5'>
+            <b>10 900</b>
+            Вподобань
+            <span>
+              <a href='#'>в соцмережі Facebook</a>
+            </span>
+          </p>
+        </div>
+        <div class='item'>
+          <p class='type-6'>
+            <b>9 239</b>
+            підписників
+            <span>
+              <a href='#'>в соцмережі ВКонтакте</a>
+            </span>
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class='btn-container'>
+      <a class='stn-btn open-form' href='#reg-form'>долучитись</a>
+    </div>
+  </div>
+</div>
+<div class='section' id='section3'>
+  <div class='section-container'>
+    <div class='section-container-inside'>
+      <div class='section3-content'>
+        <h3>
+          Не завадить зареєструватись!
+          <br>
+          Чому?
+        </h3>
+        <h6>Karpaty.ua пропонує вам вичерпний сервіс:</h6>
+        <ul class='list'>
+          <li>виїзд фотографа, повноцінна зйомка закладу - ми покажемо будинок так, щоб в ньому захотілось зупинитись;</li>
+          <li>надамо детальний опис закладу, умов перебування, додаткових послуг тощо - це створить образ місця для повноцінного відпочинку;</li>
+          <li>популярність ресурсу Карпати.юа серед користувачів Інтернету виводить заклади в топ результатів пошуку - про вас дізнається більше потенційних клієнтів;</li>
+          <li>ви отримаєте можливість відстеження відвідуваності сторінки вашого закладу на сайті - так зрозуміло, чи обраний тарифний план є ефективним;</li>
+          <li>до того ж, працює гаряча лінія: виникли питання чи потрібно уточнити деталі зйому житла - дзвоніть нам, ми завжди на зв'язку!</li>
         </ul>
-      </nav>
-      <p class='hotline'>
-        <b>Телефон:</b>
-        +38 068 635-75-69
-      </p>
-      <div class='section' id='section1' style='height: 611px;'>
-        <div class='section-container'>
-          <div class='section-container-inside'>
-            <div class='section-content'>
-              <div class='image-block'>
-                <img alt='#' src='images/slide1.png'>
-              </div>
-              <div class='text-block'>
-                <h1>Запроси до себе</h1>
-                <p>Зробіть так, щоб про вас дізнались! Karpaty.ua вам в цьому допоможе: сучасний сервіс пошуку та бронювання житла в Карпатах пропонує розмістити ваш гостиний дім, садибу чи котедж на сторінках свого каталогу. Отримайте більше гостей при мінімальних витратах часу та коштів!</p>
-                <a class='stn-btn open-form' href='#reg-form'>Нехай про вас дізнаються</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class='nav-link' data-slide='2' href='#'>більше</a>
-      </div>
-      <div class='section' data-slide='2' id='section2'>
-        <div class='container'>
-          <h2>
-            Статистика
-            <span>те, чого ми досягли</span>
-          </h2>
-          <ul class='statistics-list'>
-            <li class='row clearfix'>
-              <div class='item'>
-                <h6>Обслуговування</h6>
-              </div>
-              <div class='item'>
-                <p class='type-1'>
-                  <b>4</b>
-                  роки
-                  <span>в мережі</span>
-                </p>
-              </div>
-              <div class='item'>
-                <p class='type-2'>
-                  понад
-                  <b>300</b>
-                  закладів
-                  <span>в каталозі</span>
-                </p>
-              </div>
-            </li>
-            <li class='row clearfix'>
-              <div class='item'>
-                <h6>
-                  Відвідуваність
-                  <span>за 2014 рік</span>
-                </h6>
-              </div>
-              <div class='item'>
-                <p class='type-3'>
-                  <b>191 582</b>
-                  <span>користувачів</span>
-                </p>
-              </div>
-              <div class='item'>
-                <p class='type-4'>
-                  <b>1 269 186</b>
-                  <span>переглядів сторінок</span>
-                </p>
-              </div>
-            </li>
-            <li class='row clearfix'>
-              <div class='item'>
-                <h6>
-                  Наші групи
-                  у соцмережах
-                </h6>
-              </div>
-              <div class='item'>
-                <p class='type-5'>
-                  <b>10 900</b>
-                  Вподобань
-                  <span>
-                    <a href='#'>в соцмережі Facebook</a>
-                  </span>
-                </p>
-              </div>
-              <div class='item'>
-                <p class='type-6'>
-                  <b>9 239</b>
-                  підписників
-                  <span>
-                    <a href='#'>в соцмережі ВКонтакте</a>
-                  </span>
-                </p>
-              </div>
-            </li>
-          </ul>
-          <div class='btn-container'>
-            <a class='stn-btn open-form' href='#reg-form'>долучитись</a>
-          </div>
-        </div>
-      </div>
-      <div class='section' id='section3'>
-        <div class='section-container'>
-          <div class='section-container-inside'>
-            <div class='section3-content'>
-              <h3>
-                Не завадить зареєструватись!
-                <br>
-                Чому?
-              </h3>
-              <h6>Karpaty.ua пропонує вам вичерпний сервіс:</h6>
-              <ul class='list'>
-                <li>виїзд фотографа, повноцінна зйомка закладу - ми покажемо будинок так, щоб в ньому захотілось зупинитись;</li>
-                <li>надамо детальний опис закладу, умов перебування, додаткових послуг тощо - це створить образ місця для повноцінного відпочинку;</li>
-                <li>популярність ресурсу Карпати.юа серед користувачів Інтернету виводить заклади в топ результатів пошуку - про вас дізнається більше потенційних клієнтів;</li>
-                <li>ви отримаєте можливість відстеження відвідуваності сторінки вашого закладу на сайті - так зрозуміло, чи обраний тарифний план є ефективним;</li>
-                <li>до того ж, працює гаряча лінія: виникли питання чи потрібно уточнити деталі зйому житла - дзвоніть нам, ми завжди на зв'язку!</li>
-              </ul>
-              <div class='btn-container'>
-                <a class='stn-btn open-form' href='#reg-form'>зареєструватись</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='section' id='section4'>
-        <div class='container clearfix'>
-          <div class='fares-col'>
-            <div class='fares-col-inside'>
-              <h3>Тариф базовий</h3>
-              <div class='price-row'>
-                <p>
-                  <span>35</span>
-                  грн / місяць
-                </p>
-                <p class='tip'>
-                  мінімальний
-                  <br>
-                  термін підписки - 1 рік
-                </p>
-              </div>
-              <ul class='list'>
-                <li>розміщення житла в загальному каталозі (позиція житла в загальному каталозі не фіксована)</li>
-                <li>повноцінна фотозйомка закладу</li>
-                <li>надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua</li>
-              </ul>
-            </div>
-            <div class='btn-container'>
-              <a class='stn-btn open-form' href='#reg-form'>замовити тариф "Базовий"</a>
-            </div>
-          </div>
-          <div class='fares-col'>
-            <div class='fares-col-inside'>
-              <h3>Тариф ”Плюс”</h3>
-              <div class='price-row'>
-                <p>
-                  <span>55</span>
-                  грн / місяць
-                </p>
-                <p class='tip'>
-                  мінімальний
-                  <br>
-                  термін підписки - 1 рік
-                </p>
-              </div>
-              <ul class='list'>
-                <li>розміщення житла в загальному каталозі</li>
-                <li>постійне розміщення закладу в числі перших позицій пошуку за каталогом</li>
-                <li>повноцінна фотозйомка закладу</li>
-                <li>надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua</li>
-              </ul>
-            </div>
-            <div class='btn-container'>
-              <a class='stn-btn open-form' href='#reg-form'>замовити тариф "Плюс"</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='section' id='section5'>
-        <div class='container'>
-          <h3>Відгуки</h3>
-          <div class='reviews-list clearfix'>
-            <div class='item'>
-              <div class='image-block'>
-                <img alt='#' src='images/c-2.png'>
-              </div>
-              <h5>
-                Садиба
-                <br>
-                «Гуцулвіль»
-              </h5>
-              <p>На карпатиюа сторінку  "Гуцул-ville" розміщуємо вже більше трьох років і без перебільшень дуже задоволені. Приємно бачити постійний розвиток та вдосконалення контенту сайту, а також появу додаткових можливостей. Стабільність, прогресивність, сучасність, відкритість до нового - це найперше що спадає на думку, коли говориш про карпатиюа. Проте мабуть найважнішим буде той факт, що карпатиюа наразі взяли вектор на перетворення себе з звичайного "сайту де розміщені садиби" на справді інформоційну платформу туризму в карпатах, яка є цікавою і корисною водночас. Бажаємо вам успіху, розвитку і натхнення продовжувати розпочату вами справу.</p>
-              <p class='name'>Ігор</p>
-            </div>
-            <div class='item'>
-              <div class='image-block'>
-                <img alt='#' src='images/c-1.png'>
-              </div>
-              <h5>
-                Відпочинковий комплекс
-                «Оксамит»
-              </h5>
-              <p>Розміщуємося на ресурсі уже роки і він справді працює! Ми проводимо анкетування серед гостей і на питання 'як ви дізнались про нас?' перевага саме за karpaty.ua. З багатьох інших подібних ресурсів свою рекламу забрали. Ніколи не виникало проблем, задоволенні всім без виключення. Особлива подяка адміністраторам сайту - завжди на позитиві, радо допоможуть та підтримають. З вами дуже легко та приємно працювати  Прогресуйте і надалі! Успіхів вам!</p>
-              <p class='name'>Марія</p>
-            </div>
-            <div class='item'>
-              <div class='image-block'>
-                <img alt='#' src='images/c-3.png'>
-              </div>
-              <h5>
-                Садиба
-                <br>
-                «Карпати»
-              </h5>
-              <p>Сайтом задоволений: вдала назва; вдалий дизайн, все просто розміщено і легко користуватись; в Google сайт вже став на першу сторінку,розміщення реклами садиби весь час змінюється, тобто всі в однакових умовах, є можливість змінювати опис, і навіть один раз перефотографувати, все супер.</p>
-              <p class='name'>Петро</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='section' id='section6'>
-        <div class='section-container'>
-          <div class='section-container-inside'>
-            <h4>
-              Попереду високий сезон
-              <br>
-              Реєструйся вже сьогодні!
-            </h4>
-            <div class='btn-container'>
-              <a class='stn-btn open-form' href='#reg-form'>здати житло</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class='clearfix'>
-      <ul class='contacts'>
-        <li>
-          <b>Телефон:</b>
-          +38 068 635-75-69
-        </li>
-        <li>
-          <b>E-mail:</b>
-          <a href='mailto:info@karpaty.ua'>info@karpaty.ua</a>
-        </li>
-        <li>
-          <b>Web-сайт:</b>
-          <a class='link' href='karpaty.ua'>karpaty.ua</a>
-        </li>
-      </ul>
-      <div class='copyright'>
-        Всі права застережено
-        <b>© KARPATY.UA</b>
-      </div>
-      <ul class='social clearfix'>
-        <li>
-          <a class='twitter' href='#'></a>
-        </li>
-        <li>
-          <a class='facebook' href='#'></a>
-        </li>
-        <li>
-          <a class='vk' href='#'></a>
-        </li>
-      </ul>
-    </footer>
-    <div class='overlay' style='display: none;'></div>
-    <div id='reg-form' style='display: none;'>
-      <div class='form-sent' style='display: none;'>
-        <div class='form-sent-inside'>
-          <div class='form-sent-text'>
-            <h5>Дякуємо за реєстрацію!</h5>
-            <p>Незабаром наш менеджер зв'яжеться з Вами.</p>
-            <p>
-              <a href='#' id='hide-form-ok'>Закрити</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <form action='/' id='reg-form' method='post'>
-        <h6>реєстрація в каталозі</h6>
-        <div class='explanation clearfix'>
-          <label class='required'>Тариф</label>
-          <p>мінімальний термін підписки - 1 рік</p>
-        </div>
-        <div class='radio-btns-container'>
-          <div class='row'>
-            <input checked='checked' id='base-tariff' name='select_tariff' type='radio'>
-            <label for='base-tariff'>
-              <i>Тариф «Базовий»</i>
-              <span>
-                <b>35</b>
-                грн / місяць
-              </span>
-              <span class='tooltip' title='&lt;p&gt;розміщення житла в загальному каталозі (позиція житла в загальному каталозі не фіксована);&lt;/p&gt; &lt;p&gt;повноцінна фотозйомка закладу;&lt;/p&gt; &lt;p&gt;надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua.&lt;/p&gt;'>Умови</span>
-            </label>
-          </div>
-          <div class='row'>
-            <input id='plus-tariff' name='select_tariff' type='radio'>
-            <label for='plus-tariff'>
-              <i>Тариф «Плюс»</i>
-              <span>
-                <b>55</b>
-                грн / місяць
-              </span>
-              <span class='tooltip' title='&lt;p&gt;розміщення житла в загальному каталозі;&lt;/p&gt; &lt;p&gt;повноцінна фотозйомка закладу;&lt;/p&gt; &lt;p&gt;надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua;&lt;/p&gt; &lt;p&gt;постійне розміщення закладу в числі перших позицій пошуку за каталогом.&lt;/p&gt;'>Умови</span>
-            </label>
-          </div>
-        </div>
-        <div class='text-fields'>
-          <div class='row'>
-            <label class='required' for='name'>ПІБ користувача</label>
-            <input id='name' required='required' type='text'>
-          </div>
-          <div class='row'>
-            <label for='inst-name'>Назва закладу</label>
-            <input id='inst-name' type='text'>
-          </div>
-          <div class='row'>
-            <label for='email'>E-mail</label>
-            <input id='email' type='email'>
-          </div>
-          <div class='row'>
-            <label class='required' for='phone'>Телефон</label>
-            <input id='phone' required='required' type='tel'>
-          </div>
-        </div>
-        <div class='terms-of-use'>
-          <input id='terms-of-use' name='term_of_use' type='checkbox'>
-          <label for='terms-of-use'>
-            Я приймаю
-            <a target="_blank" href='https://dl.dropboxusercontent.com/u/2409844/%D0%9F%D0%BE%D0%BB%D1%96%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%84%D1%96%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%96.pdf'>Умови користування сервісом</a>
-            та
-            <a target="_blank" href='https://dl.dropboxusercontent.com/u/2409844/%D0%9F%D1%83%D0%B1%D0%BB%D1%96%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D1%83.pdf'>Договір оферти</a>
-          </label>
-        </div>
         <div class='btn-container'>
-          <button class='stn-btn' disabled='disabled' id='send-form'>надіслати</button>
+          <a class='stn-btn open-form' href='#reg-form'>зареєструватись</a>
         </div>
-        <a href='#' id='close-form'></a>
-      </form>
+      </div>
     </div>
-    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
-    <script src="javascripts/all.js" type="text/javascript"></script>
-  </body>
+  </div>
+</div>
+<div class='section' id='section4'>
+  <div class='container clearfix'>
+    <div class='fares-col'>
+      <div class='fares-col-inside'>
+        <h3>Тариф базовий</h3>
+        <div class='price-row'>
+          <p>
+            <span>35</span>
+            грн / місяць
+          </p>
+          <p class='tip'>
+            мінімальний
+            <br>
+            термін підписки - 1 рік
+          </p>
+        </div>
+        <ul class='list'>
+          <li>розміщення житла в загальному каталозі (позиція житла в загальному каталозі не фіксована)</li>
+          <li>повноцінна фотозйомка закладу</li>
+          <li>надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua</li>
+        </ul>
+      </div>
+      <div class='btn-container'>
+        <a class='stn-btn open-form' href='#reg-form'>замовити тариф "Базовий"</a>
+      </div>
+    </div>
+    <div class='fares-col'>
+      <div class='fares-col-inside'>
+        <h3>Тариф ”Плюс”</h3>
+        <div class='price-row'>
+          <p>
+            <span>55</span>
+            грн / місяць
+          </p>
+          <p class='tip'>
+            мінімальний
+            <br>
+            термін підписки - 1 рік
+          </p>
+        </div>
+        <ul class='list'>
+          <li>розміщення житла в загальному каталозі</li>
+          <li>постійне розміщення закладу в числі перших позицій пошуку за каталогом</li>
+          <li>повноцінна фотозйомка закладу</li>
+          <li>надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua</li>
+        </ul>
+      </div>
+      <div class='btn-container'>
+        <a class='stn-btn open-form' href='#reg-form'>замовити тариф "Плюс"</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='section' id='section5'>
+  <div class='container'>
+    <h3>Відгуки</h3>
+    <div class='reviews-list clearfix'>
+      <div class='item'>
+        <div class='image-block'>
+          <img alt='#' src='images/c-2.png'>
+        </div>
+        <h5>
+          Садиба
+          <br>
+          «Гуцулвіль»
+        </h5>
+        <p>На карпатиюа сторінку  "Гуцул-ville" розміщуємо вже більше трьох років і без перебільшень дуже задоволені. Приємно бачити постійний розвиток та вдосконалення контенту сайту, а також появу додаткових можливостей. Стабільність, прогресивність, сучасність, відкритість до нового - це найперше що спадає на думку, коли говориш про карпатиюа. Проте мабуть найважнішим буде той факт, що карпатиюа наразі взяли вектор на перетворення себе з звичайного "сайту де розміщені садиби" на справді інформоційну платформу туризму в карпатах, яка є цікавою і корисною водночас. Бажаємо вам успіху, розвитку і натхнення продовжувати розпочату вами справу.</p>
+        <p class='name'>Ігор</p>
+      </div>
+      <div class='item'>
+        <div class='image-block'>
+          <img alt='#' src='images/c-1.png'>
+        </div>
+        <h5>
+          Відпочинковий комплекс
+          «Оксамит»
+        </h5>
+        <p>Розміщуємося на ресурсі уже роки і він справді працює! Ми проводимо анкетування серед гостей і на питання 'як ви дізнались про нас?' перевага саме за karpaty.ua. З багатьох інших подібних ресурсів свою рекламу забрали. Ніколи не виникало проблем, задоволенні всім без виключення. Особлива подяка адміністраторам сайту - завжди на позитиві, радо допоможуть та підтримають. З вами дуже легко та приємно працювати  Прогресуйте і надалі! Успіхів вам!</p>
+        <p class='name'>Марія</p>
+      </div>
+      <div class='item'>
+        <div class='image-block'>
+          <img alt='#' src='images/c-3.png'>
+        </div>
+        <h5>
+          Садиба
+          <br>
+          «Карпати»
+        </h5>
+        <p>Сайтом задоволений: вдала назва; вдалий дизайн, все просто розміщено і легко користуватись; в Google сайт вже став на першу сторінку,розміщення реклами садиби весь час змінюється, тобто всі в однакових умовах, є можливість змінювати опис, і навіть один раз перефотографувати, все супер.</p>
+        <p class='name'>Петро</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='section' id='section6'>
+  <div class='section-container'>
+    <div class='section-container-inside'>
+      <h4>
+        Попереду високий сезон
+        <br>
+        Реєструйся вже сьогодні!
+      </h4>
+      <div class='btn-container'>
+        <a class='stn-btn open-form' href='#reg-form'>здати житло</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class='clearfix'>
+  <ul class='contacts'>
+    <li>
+      <b>Телефон:</b>
+      +38 068 635-75-69
+    </li>
+    <li>
+      <b>E-mail:</b>
+      <a href='mailto:info@karpaty.ua'>info@karpaty.ua</a>
+    </li>
+    <li>
+      <b>Web-сайт:</b>
+      <a class='link' href='karpaty.ua'>karpaty.ua</a>
+    </li>
+  </ul>
+  <div class='copyright'>
+    Всі права застережено
+    <b>© KARPATY.UA</b>
+  </div>
+  <ul class='social clearfix'>
+    <li>
+      <a class='twitter' href='#'></a>
+    </li>
+    <li>
+      <a class='facebook' href='#'></a>
+    </li>
+    <li>
+      <a class='vk' href='#'></a>
+    </li>
+  </ul>
+</footer>
+<div class='overlay' style='display: none;'></div>
+<div id='reg-form' style='display: none;'>
+  <div class='form-sent' style='display: none;'>
+    <div class='form-sent-inside'>
+      <div class='form-sent-text'>
+        <h5>Дякуємо за реєстрацію!</h5>
+        <p>Незабаром наш менеджер зв'яжеться з Вами.</p>
+        <p>
+          <a href='#' id='hide-form-ok'>Закрити</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <form action='//docs.google.com/forms/d/19hLZYsJP4uDiFpOw58xlD-LOelQv28GMtrY5-UreH8o/formResponse' id='reg-form' method='post'>
+    <h6>реєстрація в каталозі</h6>
+    <div class='explanation clearfix'>
+      <label class='required'>Тариф</label>
+      <p>мінімальний термін підписки - 1 рік</p>
+    </div>
+    <div class='radio-btns-container'>
+      <div class='row'>
+        <input checked='checked' id='base-tariff' name='entry.1635257368' value="Базовий" type='radio'>
+        <label for='base-tariff'>
+          <i>Тариф «Базовий»</i>
+          <span>
+            <b>35</b>
+            грн / місяць
+          </span>
+          <span class='tooltip' title='&lt;p&gt;розміщення житла в загальному каталозі (позиція житла в загальному каталозі не фіксована);&lt;/p&gt; &lt;p&gt;повноцінна фотозйомка закладу;&lt;/p&gt; &lt;p&gt;надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua.&lt;/p&gt;'>Умови</span>
+        </label>
+      </div>
+      <div class='row'>
+        <input id='plus-tariff' name='entry.1635257368' value="Плюс" type='radio'>
+        <label for='plus-tariff'>
+          <i>Тариф «Плюс»</i>
+          <span>
+            <b>55</b>
+            грн / місяць
+          </span>
+          <span class='tooltip' title='&lt;p&gt;розміщення житла в загальному каталозі;&lt;/p&gt; &lt;p&gt;повноцінна фотозйомка закладу;&lt;/p&gt; &lt;p&gt;надання статистики відвідуваності сторінки вашого закладу на сайті Karpaty.ua;&lt;/p&gt; &lt;p&gt;постійне розміщення закладу в числі перших позицій пошуку за каталогом.&lt;/p&gt;'>Умови</span>
+        </label>
+      </div>
+    </div>
+    <div class='text-fields'>
+      <div class='row'>
+        <label class='required' for='name'>ПІБ користувача</label>
+        <input id='name' required='required' type='text' name="entry.174219366">
+      </div>
+      <div class='row'>
+        <label for='inst-name'>Назва закладу</label>
+        <input id='inst-name' type='text' name="entry.1149695756">
+      </div>
+      <div class='row'>
+        <label for='email'>E-mail</label>
+        <input id='email' type='email' name="entry.1134948159">
+      </div>
+      <div class='row'>
+        <label class='required' for='phone'>Телефон</label>
+        <input id='phone' required='required' type='tel' name="entry.1997546200">
+      </div>
+    </div>
+    <div class='terms-of-use'>
+      <input id='terms-of-use' name='term_of_use' type='checkbox'>
+      <label for='terms-of-use'>
+        Я приймаю
+        <a target="_blank" href='https://dl.dropboxusercontent.com/u/2409844/%D0%9F%D0%BE%D0%BB%D1%96%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%84%D1%96%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D1%96.pdf'>Умови користування сервісом</a>
+        та
+        <a target="_blank" href='https://dl.dropboxusercontent.com/u/2409844/%D0%9F%D1%83%D0%B1%D0%BB%D1%96%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D1%96%D1%80%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D1%83.pdf'>Договір оферти</a>
+      </label>
+    </div>
+    <div class='btn-container'>
+      <button class='stn-btn' disabled='disabled' id='send-form'>надіслати</button>
+    </div>
+    <a href='#' id='close-form'></a>
+  </form>
+</div>
+<link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+<script src="javascripts/all.js" type="text/javascript"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34916825-4', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>
