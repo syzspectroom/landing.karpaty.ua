@@ -24,4 +24,4 @@ $('.reg-form').on('submit', function(e) {
   data = form.serialize();
   action = form.prop('action');
   xhr = $.post(action, data);
-  return xhr.always(function() {$('.form-sent').show()});});
+  return xhr.always(function() {$('.reg-form').hide();$('.form-sent').show()});});
