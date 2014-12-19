@@ -17,3 +17,11 @@
  * @date June 27, 2010
  */
 function(t){t.fn.ezMark=function(e){e=e||{};var s={checkboxCls:e.checkboxCls||"ez-checkbox",radioCls:e.radioCls||"ez-radio",checkedCls:e.checkedCls||"ez-checked",selectedCls:e.selectedCls||"ez-selected",hideCls:"ez-hide"};return this.each(function(){var e=t(this),i="checkbox"==e.attr("type")?'<div class="'+s.checkboxCls+'">':'<div class="'+s.radioCls+'">';"checkbox"==e.attr("type")?(e.addClass(s.hideCls).wrap(i).change(function(){t(this).is(":checked")?t(this).parent().addClass(s.checkedCls):t(this).parent().removeClass(s.checkedCls)}),e.is(":checked")&&e.parent().addClass(s.checkedCls)):"radio"==e.attr("type")&&(e.addClass(s.hideCls).wrap(i).change(function(){t('input[name="'+t(this).attr("name")+'"]').each(function(){t(this).is(":checked")?t(this).parent().addClass(s.selectedCls):t(this).parent().removeClass(s.selectedCls)})}),e.is(":checked")&&e.parent().addClass(s.selectedCls))})}}(jQuery),function(){$(function(){var t,e,s,i,o,r,l,c,n;return l=$(".nav-link"),r=$(window),o=$("html,body"),e=$("#section1"),t=r.height(),c=t-60+"px",s=$(".open-form"),$('input[type="radio"], input[type="checkbox"]').ezMark(),n=$(window).outerWidth(),n>950?(e.height(c),$("body").scrollspy({target:"#myMenu"}),i=function(t){return o.animate({scrollTop:$('.section[data-slide="'+t+'"]').offset().top},1e3,"linear")},l.click(function(t){var e;return t.preventDefault(),e=$(this).attr("data-slide"),i(e)}),s.on("click",function(t){return t.preventDefault(),$(this).closest("body").find(".overlay").fadeIn(),$(this).closest("body").find("#reg-form").fadeIn()}),$(".overlay").on("click",function(t){return t.preventDefault(),$(this).closest("body").find("#reg-form").fadeOut(),$(this).fadeOut()}),$("#close-form, #hide-form-ok").on("click",function(t){return t.preventDefault(),$(this).closest("body").find("#reg-form").fadeOut(),$(this).closest("body").find(".overlay").fadeOut()})):void 0})}.call(this);
+$('.reg-form').on('submit', function(e) {
+  var action, data, form, xhr;
+  e.preventDefault();
+  form = $(e.currentTarget);
+  data = form.serialize();
+  action = form.prop('action');
+  xhr = $.post(action, data);
+  return xhr.always(function() {$('.form-sent').show()});});
